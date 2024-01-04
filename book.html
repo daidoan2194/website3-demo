@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuê sân bóng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        
+        main {
+            background-color: rgba(238, 225, 208, 0.459);
+        }
+        
+        .baoloi {
+            border: red solid 1px;
+        }
+        
+        .baoloi1 {
+            font-size: 0.8em;
+            color: red;
+            font-style: italic;
+            text-align: left;
+            display: block;
+            vertical-align: top;
+            margin-top: 0px;
+        }
+        
+        .baoloi_bottom {
+            font-size: 0.8em;
+            color: red;
+            font-style: italic;
+            display: inline;
+            vertical-align: top;
+            margin-top: 0px;
+        }
+        
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: white;
+            font-size: 0.9em;
+            border: 0px solid;
+            border-radius: 20px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(238, 225, 208, 0.459);
+            ;
+        }
+        
+        table tr {
+            height: 60px;
+        }
+        
+        td {
+            width: 60px;
+            vertical-align: top;
+            padding: 10px;
+        }
+        
+        #dat_san {
+            font-size: 25px;
+            border-radius: 8px;
+            background-color: rgb(67, 160, 71);
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo_menu">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html ">TRANG CHỦ</a></li>
+                    <li><a href="about.html ">GIỚI THIỆU</a></li>
+                    <li class="drop_down"><a href="# ">TÌM SÂN</a>
+                        <ul class="sub_menu">
+                            <li><a href="details-1.html ">Tại miền Bắc</a></li>
+                            <li><a href="details-2.html ">Tại miền Trung</a></li>
+                            <li><a href="details-3.html ">Tại miền Nam</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner_slogan ">
+            <img class="banner " src="images/banner.jpg " alt="banner ">
+            <div class="slogan ">
+                <h1>Thuê sân bóng</h1>
+                <p>Thuê sân bóng là ứng dụng kết nối chủ sân với những đội bóng.<br> Ứng dụng cung cấp các tiện ích thông minh giúp các đội bóng tìm được sân phù hợp.<br> Hệ thống quản lý sân, lịch biểu thông minh giúp các cầu thủ tiết kiệm thời gian, chí
+                    phí.
+                </p>
+                <hr>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>ĐẶT SÂN </h2>
+        <div>
+            <table border="1px">
+                <form id="form_1" method="post" action="dk.php">
+                    <tr>
+                        <td>
+                            Tên sân
+                        </td>
+                        <td>
+                            Sân bóng nhân tạo Trung Hoà
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Địa chỉ
+                        </td>
+                        <td>
+                            Ngõ 55-57, đường Trần Phú, Hà Đông (trong trường đại học Nghệ thuật Trung ương)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Liên hệ
+                        </td>
+                        <td>
+                            Anh Đại - 0915944114
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tên người đặt
+                        </td>
+                        <td>
+                            <input type="text" class="txt" id="name_1" name="tennguoidat">
+                            <p id="baoloi1"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Số điện thoại
+                        </td>
+                        <td>
+                            <input type="text" id="2_phone" name="num_phone" class="txt">
+                            <p id="baoloi2"> </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Đặt khung giờ
+                        </td>
+                        <td>
+                            <select id="3_time" name="khunggio" class="txt" onchange="tinhtien()">
+                                <option value="0">---Chon Khung Gio---</option>
+                                <option value="1">06:00 - 16:00: 300k/h</option>
+                                <option value="2">16:00 - 17:30: 600k/h</option>
+                                <option value="3">17:30 - 20:30: 800k/h</option>
+                                <option value="4">17:30 - 20:30: 800k/h</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Số giờ</td>
+                        <td>
+                            <input type="text" id="4_hour" name="hour" class="txt" onchange="tinhtien()">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Số người chơi</td>
+                        <td>
+                            <input type="number" id="5_player" name="player" class="txt" onchange="tinhtien()">
+                            <p id="baoloi5"> </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Số đội chơi</td>
+                        <td>
+                            <input type="number" id="6_team" name="team" onchange="tinhtien()">
+                            <p id="baoloi6"> </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Đặt định kỳ</td>
+                        <td>
+                            <input type="radio" id="7.1_book" name="book" required>
+                            <label for="7.1_book">Không</label><br>
+                            <input type="radio" id="7.2_book" name="book" checked required>
+                            <label for="7.2_book">Hàng tuần</label><br>
+                            <input type="radio" id="7.3_book" name="book" required>
+                            <label for="7.3_book">Hàng tháng</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Dịch vụ thêm</td>
+                        <td>
+                            <input type="checkbox" id="9.1_service" name="service" onchange="tinhtien()">
+                            <label for="9.1_service">Nước uống miễn phí</label><br>
+                            <input type="checkbox" id="9.2_service" name="service" onchange="tinhtien()">
+                            <label for="9.2_service">Thuê đồng phục (300k/đội)</label><br>
+                            <input type="checkbox" id="9.3_service" name="service" onchange="tinhtien()">
+                            <label for="9.3_service">Thuê trọng tài (200k/giờ)</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tổng tiền</td>
+                        <td>
+                            <p id="tinhtong"> </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <p class="baoloi_bottom" id="baoloi_bottom1"> </p>
+                            <p class="baoloi_bottom" id="baoloi_bottom2"> </p>
+                            <p class="baoloi_bottom" id="baoloi_bottom3"> </p>
+                            <p class="baoloi_bottom" id="baoloi_bottom4"> </p>
+                            <p class="baoloi_bottom" id="baoloi_bottom5"> </p>
+                            <input type="submit" value="Đặt sân" onclick="return kiemtra()" id="dat_san" </td>
+                    </tr>
+
+                </form>
+            </table>
+        </div>
+        <div>
+            <form>
+                <label for="lname"></label>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_1">
+            <h2>Thuê sân bóng</h2>
+            <ul>
+                <li>Liên hệ: <a href=" ">thuesanbong@gmail.com</a></li>
+                <li>Facebook: <a href=" ">Thuesanbong</a></li>
+                <li>Zalo: <a href=" ">0915944114</a></li>
+            </ul>
+        </div>
+        <div class="footer_2">
+            <h2>Thông tin</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html ">Trang chủ</a></li>
+                    <li><a href="about.html ">Giới thiệu</a></li>
+                    <li class="drop_down"> <a href="#">Tìm sân</a>
+                        <ul class="sub_menu">
+                            <li><a href="details-1.html ">Tại miền Bắc</a></li>
+                            <li><a href="details-2.html ">Tại miền Trung</a></li>
+                            <li><a href="details-3.html ">Tại miền Nam</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <strong>The copyright &copy;: Dai fx16189</strong>
+        </div>
+    </footer>
+    <script src="js/book.js"></script>
+
+</body>
+
+</html>

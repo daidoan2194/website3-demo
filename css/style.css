@@ -1,0 +1,338 @@
+ h1 {
+     font-size: 2em;
+ }
+ 
+ h2 {
+     font-size: 1.5em;
+ }
+ 
+ h3 {
+     font-size: 1em;
+ }
+ 
+ h4 {
+     font-size: 0.75em;
+ }
+ 
+ h5 {
+     font-size: 0.5em;
+ }
+ 
+ h6 {
+     font-size: 0.25em;
+ }
+ 
+ body {
+     font-family: 'Open Sans', sans-serif;
+     margin: 0 auto;
+     padding: 1%;
+     width: 99%;
+     min-width: 300px;
+     max-width: 1000px;
+     font-size: 20px;
+     color: brown;
+     background-color: whitesmoke;
+ }
+ 
+ header {
+     background-image: url("../images/background_header/background_footer.jpg");
+ }
+ /*cái này không cần thiết*/
+ 
+ .logo_menu {
+     overflow: auto;
+     border: 1px solid rgb(95, 72, 10);
+     border-radius: 8px 8px 0 0;
+     height: 150px;
+ }
+ 
+ .logo {
+     display: inline-block;
+     width: 50px;
+     line-height: 52px;
+     margin-left: 50px;
+ }
+ 
+ .logo img {
+     width: 100%;
+     vertical-align: middle;
+     overflow: hidden;
+ }
+ 
+ nav {
+     display: inline-block;
+     margin: 0;
+     padding-right: 50px;
+     width: 80%;
+ }
+ 
+ nav li {
+     display: inline-block;
+ }
+ 
+ nav ul {
+     padding-left: 0px;
+ }
+ 
+ header nav li a {
+     padding-left: 30px;
+     text-decoration: none;
+     color: brown;
+     font-weight: bold;
+ }
+ 
+ .banner {
+     display: inline-block;
+     width: 100%;
+ }
+ 
+ .banner_slogan img {
+     height: 100%;
+     margin-bottom: -4px;
+ }
+ 
+ .slogan {
+     color: white;
+     display: block;
+     position: absolute;
+     left: 50px;
+     top: 10px;
+     text-align: center;
+     max-height: 95%;
+     overflow: auto;
+ }
+ 
+ .slogan p,
+ hr {
+     text-align: justify;
+     margin-left: 50px;
+ }
+ 
+ .slogan h1 {
+     margin: 0px;
+ }
+ 
+ .banner_slogan {
+     position: relative;
+ }
+ 
+ main {
+     min-width: 80%;
+     margin-top: 0px;
+     padding-top: 5px;
+     background-color: rgba(144, 238, 144, 0.1);
+ }
+ 
+ .main_1 {
+     border: 1px solid gray;
+ }
+ 
+ .main_1 aside {
+     border: ridge 2px;
+     border-radius: 8px;
+     width: 30%;
+     /*ty le nay khi thu nho phan tu khong bi truot*/
+     padding-top: 10px;
+     padding-left: 10px;
+     display: inline-block;
+     vertical-align: top;
+     margin-left: 20px;
+     margin-top: 2px;
+     object-fit: scale-down;
+     background-color: white;
+     margin-right: 1px;
+ }
+ 
+ .main_1 article {
+     border: ridge 4px silver;
+     border-radius: 8px;
+     width: 60%;
+     display: inline-block;
+     margin-top: 2px;
+     object-fit: scale-down;
+     background-color: white;
+     padding-left: 10px;
+ }
+ 
+ .main_1 aside img {
+     width: 90%;
+     vertical-align: middle;
+     margin-left: 10px;
+ }
+ 
+ .main_1 aside img,
+ p {
+     margin-top: 30px;
+     text-align: center;
+ }
+ 
+ .main_1 article img {
+     width: 85%;
+ }
+ 
+ .chi_tiet,
+ .dat_san {
+     display: inline-block;
+     margin: 10px;
+     font-size: 20px;
+     background-color: rgba(255, 255, 0, 0.267);
+     border-radius: 15px;
+ }
+ 
+ footer {
+     background-image: url("../images/background_header/background_footer.jpg");
+     color: rgb(37, 47, 56);
+     position: relative;
+     height: 250px;
+ }
+ /*trang trí footer*/
+ 
+ footer .footer_1 {
+     display: inline-block;
+     text-decoration: none;
+     width: 325px;
+     margin-left: 100px;
+     margin-top: 10px;
+     vertical-align: top;
+     line-height: 20px;
+     box-sizing: border-box;
+ }
+ 
+ footer .footer_2 {
+     display: inline-block;
+     width: 300px;
+     margin-top: 2px;
+     margin-left: 50px;
+     box-sizing: border-box;
+     vertical-align: top;
+ }
+ 
+ .footer_2 nav {
+     border: none;
+     text-decoration: none;
+     color: aliceblue;
+ }
+ 
+ .footer_1 li {
+     padding-top: 10px;
+     list-style: none;
+ }
+ 
+ footer li a {
+     text-decoration: underline;
+     padding-top: 10px;
+     color: rgb(17, 167, 218);
+     /*màu sắc chữ liên kết phần footer*/
+ }
+ 
+ strong {
+     display: inline-block;
+     position: absolute;
+     top: 30px;
+     right: 10px;
+     color: brown;
+ }
+ 
+ .footer_1 ul {
+     padding-left: 0px;
+     margin: 0 auto;
+ }
+ 
+ .footer_2 ul {
+     margin: 0 auto;
+ }
+ 
+ .footer_2 ul li {
+     display: block;
+     padding-top: 0px;
+     line-height: 25px;
+ }
+ /*sub menu phần header*/
+ 
+ header .drop_down {
+     position: relative;
+ }
+ 
+ header nav .sub_menu {
+     position: absolute;
+     width: 200px;
+     left: 50px;
+     top: 20px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     display: none;
+ }
+ 
+ header nav .sub_menu a {
+     color: brown;
+     line-height: 30px;
+ }
+ 
+ header nav .drop_down:hover .sub_menu {
+     display: block;
+ }
+ 
+ header nav .sub_menu a:hover {
+     background-color: aquamarine;
+ }
+ /*sub menu phần footer*/
+ 
+ footer .sub_menu {
+     position: absolute;
+     display: none;
+     top: 30px;
+     width: 350px;
+     left: -110px;
+ }
+ 
+ footer .sub_menu li {
+     display: inline-block;
+     font-size: 15px;
+ }
+ 
+ footer .sub_menu li a {
+     color: rgb(167, 96, 9);
+     padding: 5px;
+ }
+ 
+ footer .drop_down {
+     position: relative;
+     height: 80px;
+     /*để di chuột submenu không bị mất)*/
+ }
+ 
+ footer .drop_down:hover .sub_menu {
+     display: inline-block;
+ }
+ /*css trang about*/
+ 
+ .about_page h1 {
+     margin-top: 0px;
+     text-align: center;
+     background-color: lavenderblush;
+     padding: 15px;
+     color: brown;
+ }
+ 
+ .about_page {
+     background-color: whitesmoke;
+     border: 1px solid black;
+ }
+ 
+ .about_page p {
+     text-align: justify;
+     padding-left: 20px;
+     padding: 15px;
+ }
+ /* can giua anh*/
+ 
+ .about_page img {
+     width: 70%;
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .about_page ul {
+     margin-bottom: 0px;
+     padding-bottom: 5px;
+ }
+ /* DINH DANG TRANG BOOK.HTML */
